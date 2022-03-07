@@ -11,7 +11,7 @@ export interface GradientPropsMandatory {
   y1: string,
   x2: string,
   y2: string,
-  useNativeDriver: bool,
+  useNativeDriver: boolean,
 }
 export type GradientProps = Partial<GradientPropsMandatory>
 
