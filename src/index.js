@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 import { View, StyleSheet, Animated } from 'react-native';
 
-//import Expo, { Svg } from 'expo';
 import Svg, {
     Circle,
     ClipPath,
@@ -29,7 +28,8 @@ export default class SvgAnimatedLinearGradient extends Component {
             offsets: [
                 '0.0001', '0.0002', '0.0003' // Avoid duplicate value cause error in Android
             ],
-            frequence: props.duration / 2
+            frequence: props.duration / 2,
+            useNativeDriver: props.useNativeDriver
         }
         this._isMounted = false;
         this._animate = new Animated.Value(0)
